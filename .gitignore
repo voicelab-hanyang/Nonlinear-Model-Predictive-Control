@@ -1,0 +1,11 @@
+# Project-management samples are retained locally but excluded from this paper repository.
+/docs/weekly-reports/
+
+# Generated network written by QMPC_daily_main_feedforward_v2.m.
+/net.mat
+
+# MATLAB editor, cache, and code-generation artifacts.
+*.asv
+*.m~
+slprj/
+codegen/
