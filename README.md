@@ -55,10 +55,7 @@ $$
 The learned policy selects a state-dependent terminal weight $\widehat{\lambda}(s)$. The paper-level value-function approximation is
 
 $$
-\widehat V\!\left(\mathrm{SOC}(d+N)\right)
-=
-\widehat{\lambda}(s)
-\left(\mathrm{SOC}(d+N)-\mathrm{SOC}_{f}\right),
+\widehat{V}\left(\mathrm{SOC}(d+N)\right) = \widehat{\lambda}(s)\left(\mathrm{SOC}(d+N)-\mathrm{SOC}_{f}\right).
 $$
 
 where $N$ is the prediction horizon and $\mathrm{SOC}_{f}$ is the target final SOC. V-MPC combines the finite-horizon fuel stage cost with this terminal value:
@@ -67,9 +64,9 @@ $$
 \min_{u}
 \left[
 \sum_{k=0}^{N-1}
-\Delta m_{f,d}\!\left(x(k\mid d),u(k\mid d)\right)
+\Delta m_{f,d}\left(x(k\mid d),u(k\mid d)\right)
 +
-\widehat V\!\left(x(N\mid d)\right)
+\widehat{V}\left(x(N\mid d)\right)
 \right],
 $$
 
